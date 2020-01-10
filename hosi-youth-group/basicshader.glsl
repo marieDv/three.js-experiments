@@ -34,6 +34,6 @@ vec3 gradientTwo = mix(green, red, precent);
 
 vec3 finalOutput = mix(gradient, gradientTwo,abs(cos(iTime)));
 
-  vec3 color = finalOutput;
+  vec3 color = gradientTwo;
   gl_FragColor = vec4(color, 1.0);
 }
